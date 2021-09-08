@@ -1,2 +1,2 @@
 # rsschool-cv
-CV created while studying at rsschool
+https://alexxg0152.github.io/rsschool-cv/cv
