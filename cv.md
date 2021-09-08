@@ -78,3 +78,59 @@ Reports            | :red_circle::red_circle::red_circle::red_circle::red_circle
 * Ability to **self-study**, **responsibility**, initiative, sociability, purposefulness.
 * Experienced user of **MS Windows, MacOS, iOS, Android, MS Office, Internet, CSS&HTML, Photoshop, IDE, GitHub, SQL, browsers, hardware**. 
 
+***
+## Code Examples
+I'm made little one file application in Python for convert JSON-like government report file to easy check and readable .xlsx file.  
+This is front-end part from file.  
+Repository with file place on [GitHub](https://github.com/AlexXG0152/PU-2 "GitHub").  
+
+```html
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+  <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+  </head>
+
+  <body>
+  <form action="/upload" method="post" class="dropzone" enctype="multipart/form-data" name="upload" id="upload"></form>
+  <button type="button" onclick="onSubmit('/convert')">Convert</button>
+
+  <p id="result"></p>
+  <a href="example">
+    <p id="response"></p>
+  </a>
+
+  <script>
+    function onSubmit(value) {
+      var myRequest = new Request("/convert");
+      var myInit = { method: "PUT" };
+      fetch(myRequest, myInit).then(response => response.text())
+        .then((response) => {
+            $("#response").text(response)
+            $("a").prop("href", (response))
+            $("#result").text("Your result .xlsx file in this folder:")
+        });
+    }
+  </script>
+
+  <script>
+  Dropzone.options.upload = {
+        acceptedFiles:'.json, .txt'       
+    };
+  </script>  
+  
+  </body>
+</html>
+
+```
+
+Code example form [CodeWars](https://www.codewars.com/kata/5680781b6b7c2be860000036 "CodeWars") cata for find and show the index of the vowels in a given word:
+```python
+def vowel_indices(word):
+    return [k for k, v in enumerate(word, 1) if v in "aeuioyAEUIOY"]
+```
+
+
