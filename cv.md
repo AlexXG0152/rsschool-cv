@@ -49,3 +49,32 @@ Branch «Khimvolokno Plant» JSC «Grodno Azot», Grodno.**
 **Specialty:** &emsp; &emsp; Political Science  
 **Qualification:** &emsp;political scientist - lawyer
 
+***
+## Certificates  
+  
+Period                        | Course name, place
+---------------------------   | ---------------------------
+July 2021 - September 2021    | Process Mining: Data science in Action, coursera.org, online.
+February 2019 - March 2019    | Business Analyses course in EPAM, EPAM Systems, Grodno.     
+June 2018                     | Personnel management. KPI, motivation, assessment and competency management tools, BelGISS, Minsk.  
+February - April 2018         | HR Manager, Business School XXI VEK-CONSULT, Minsk.  
+January 2011 - June 2013      | Polish language courses, Grodno.  
+
+## Skills  
+  
+Skill              | Mark
+----------------   | ----------------
+Polish             | :red_circle::red_circle::red_circle::red_circle::red_circle::red_circle::red_circle::red_circle::white_circle::white_circle:
+English            | :red_circle::red_circle::red_circle::red_circle::red_circle::red_circle::white_circle::white_circle::white_circle::white_circle:
+Human Resources    | :red_circle::red_circle::red_circle::red_circle::red_circle::red_circle::red_circle::red_circle::red_circle::white_circle:
+Python             | :red_circle::red_circle::red_circle::red_circle::red_circle::red_circle::white_circle::white_circle::white_circle::white_circle:
+VBA                | :red_circle::red_circle::red_circle::red_circle::white_circle::white_circle::white_circle::white_circle::white_circle::white_circle:
+Business Analysis  | :red_circle::red_circle::red_circle::red_circle::red_circle::red_circle::red_circle::white_circle::white_circle::white_circle:
+Reports            | :red_circle::red_circle::red_circle::red_circle::red_circle::red_circle::red_circle::red_circle::white_circle::white_circle:
+
+* Two years experience as an expert on part of customer in process of implementing **"Human Resources and Payroll"** block of **ERP system**. Description of existing business processes and systems, development requirements for a new system, implementation a new system, training and pilot start a new system.  
+* **Team** management.  
+* **Project** management and **scheduling**.  
+* Ability to **self-study**, **responsibility**, initiative, sociability, purposefulness.
+* Experienced user of **MS Windows, MacOS, iOS, Android, MS Office, Internet, CSS&HTML, Photoshop, IDE, GitHub, SQL, browsers, hardware**. 
+
