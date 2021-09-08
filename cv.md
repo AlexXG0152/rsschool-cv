@@ -133,4 +133,19 @@ def vowel_indices(word):
     return [k for k, v in enumerate(word, 1) if v in "aeuioyAEUIOY"]
 ```
 
+***
+## Interests
+* Codewars
+* Сycling
+* Reading
+* Learning languages
+* Traveling 
+* Paintball / Airsoft 
 
+*** 
+## Languages  
+* English - B2  
+* Polish - C1  
+* Ukrainian - A1  
+
+***
