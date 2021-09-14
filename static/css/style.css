@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5em;
+    background-color: #dadada;
+    color: #383838;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    padding: 10px 5px;
+    font-size: 24px;
+}
+h2 {
+    padding: 10px 5px;
+    background-color: #dadada;
+    margin: 5px 0px 25px 0px
+}
+
+ul {
+    margin: auto;
+}
+
+li {
+    font-size: 16px;
+    padding: 3px 10px;
+}
+
+pre, 
+code {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, Courier New, monospace, serif;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  width: auto;
+  padding: 5px;
+  background-color: #eee;
+  overflow-x: auto;
+  overflow-y: auto;
+  scrollbar-width: none;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+main, 
+h1, 
+header, 
+footer {
+    padding: 10px 5px;
+    background-color: #ffffff;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+main div, 
+.main div, 
+p, 
+h3 {
+     padding: 0 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+ul#contact-data {
+  padding: 0px;
+}
+
+figure#photopic {
+  display:table-cell;
+  vertical-align: top;
+}
+
+hr {
+  color: #dadada;
+}
+
+figure {
+  text-align: center;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+/* [NAV MENU] */
+/* Add a black background color to the top navigation */
+nav {
+  background-color: #dadada;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  padding: 0 17px;
+  width: 50%;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+  float: left;
+  display: block;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px 4px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.about-me-avatar {
+  display: inline-block;
+  width: 180px;
+  border-radius: 5%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.main-wrapper, 
+.page-header, 
+.page-footer__inner {
+  margin: 0 auto;
+  max-width: 950px;
+  padding: 0 2rem;
+}
+
+
+/* [CERTIFICATES TABLE] */
+#certificate {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#certificate td, 
+#certificate th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#certificate tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#certificate tr:hover {
+  background-color: #ddd;
+}
+
+#certificate th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #dadada;
+  color: #000000;
+}
+
+/* [FOOTER] */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dadada;
+  padding: 10px 0;
+  gap: 10px;
+  list-style-type: none;
+  position: relative;
+}
+
+.page-footer-inner {
+  background-color: #dadada;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* [HAMBERGER MENU] */
+/* [ON BIG SCREENS] */
+/* (A) WRAPPER */
+#hamnav {
+  width: 100%;
+  background: #dadada;
+  /* Optional */
+  position: sticky;
+  top: 0;
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems { display: flex; }
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover { 
+  background: #ffffff; 
+}
+
+/* (C) HIDE HAMBURGER */
+#hamnav label, 
+#hamburger { 
+  display: none; 
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #707070;
+  }
+
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label {
+    display: inline-block;
+    color: black;
+    background: #dadada;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems { 
+    display: none; 
+  }
+  #hamnav input:checked ~ #hamitems { 
+    display: block; 
+  }
+}
+
+
+/* [COLUMNS FOR PIC AND CONTACTS] */
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 1px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* [FOR SMALL SCREEN] */
+@media (max-width: 700px) {
+  .section {
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-wrapper {
+      padding: 0 1rem;
+  }
+  section {
+      padding: 0 1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .main-wrapper {
+      padding: 0;
+  }
+  section {
+      padding: 0;
+  }
+}
+
+
+/* [SPINNING PICS IN PORTFOLIO] */
+@keyframes spinning {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
+}
+.spinhov:hover {
+  animation-name: spinning;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: ease-in-out;
+}
